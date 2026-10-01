@@ -1,0 +1,184 @@
+/*
+	CSS Selectors Practice - My Personal Profile Webpage
+	Author: Simon KC
+	Selectors used: universal, element, class, ID, grouping
+*/
+
+
+/* ==========================================
+   1. UNIVERSAL SELECTOR (*)
+   Targets every element on the page.
+   Used as a simple reset so all elements
+   start with the same spacing.
+   ========================================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* ==========================================
+   2. ELEMENT SELECTORS
+   Target elements by their HTML tag name.
+   ========================================== */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #222222;
+	background-color: #f2f4f7;
+}
+
+header {
+	background-color: #000080;
+	color: #ffffff;
+	text-align: center;
+	padding: 30px 16px;
+}
+
+section {
+	background-color: #ffffff;
+	border: 1px solid #bbbbbb;
+	border-radius: 6px;
+	padding: 18px 22px;
+	margin-bottom: 18px;
+}
+
+ul {
+	list-style-type: disc;
+	padding-left: 24px;
+}
+
+a {
+	color: #0000ee;
+}
+
+footer {
+	background-color: #333333;
+	color: #ffffff;
+	text-align: center;
+	padding: 14px 16px;
+	margin-top: 24px;
+}
+
+
+/* ==========================================
+   3. GROUPING SELECTOR
+   One rule applied to several selectors at
+   the same time.
+   ========================================== */
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+	font-weight: bold;
+}
+
+p, li {
+	font-size: 17px;
+}
+
+
+/* ==========================================
+   4. CLASS SELECTORS (.name)
+   Reusable styles for any element that has
+   matching class="..." in the HTML.
+   ========================================== */
+.profile-container {
+	width: 640px;
+	max-width: 100%;
+	margin: 26px auto 0;
+	padding: 0 14px;
+}
+
+.tagline {
+	font-size: 18px;
+	font-style: italic;
+}
+
+.highlight {
+	background-color: #ffe680;
+	font-weight: bold;
+	padding: 0 4px;
+}
+
+.profile-photo {
+	display: block;
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto 16px;
+	border: 3px solid #000080;
+}
+
+.skill-item {
+	background-color: #eef1fb;
+	border: 1px solid #000080;
+	margin-bottom: 8px;
+	padding: 8px 10px;
+}
+
+.contact-link {
+	color: #006400;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+/* ==========================================
+   5. ID SELECTORS (#name)
+   Each ID is unique, so each rule styles one
+   specific section with its own accent color.
+   ========================================== */
+#about {
+	border-left: 6px solid #000080;
+}
+
+#education {
+	border-left: 6px solid #006400;
+}
+
+#skills {
+	border-left: 6px solid #b8860b;
+}
+
+#contact {
+	border-left: 6px solid #8b0000;
+}
+
+
+/* ==========================================
+   Styles for report.html (same external file)
+   ========================================== */
+.report {
+	width: 760px;
+	max-width: 100%;
+	margin: 26px auto 0;
+	padding: 26px 30px;
+	background-color: #ffffff;
+	border: 1px solid #bbbbbb;
+	border-radius: 6px;
+}
+
+.report h2 {
+	margin-top: 22px;
+	margin-bottom: 8px;
+	color: #000080;
+}
+
+.report-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+
+.report-table th,
+.report-table td {
+	border: 1px solid #bbbbbb;
+	padding: 8px 10px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.report-table th {
+	background-color: #000080;
+	color: #ffffff;
+}

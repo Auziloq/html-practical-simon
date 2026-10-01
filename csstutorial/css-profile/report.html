@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simon KC - CSS Selectors Report</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>CSS Selectors Report</h1>
+		<p class="tagline">My Personal Profile Webpage - Simon KC</p>
+	</header>
+
+	<div class="report">
+		<h2>Selector Demonstration Table</h2>
+		<table class="report-table">
+			<tr>
+				<th>Selector</th>
+				<th>HTML Element Targeted</th>
+				<th>Purpose</th>
+			</tr>
+			<tr>
+				<td>Element Selector</td>
+				<td>body, header, section, ul, a, footer</td>
+				<td>Styles every element of that tag type on the page with one rule.</td>
+			</tr>
+			<tr>
+				<td>Class Selector</td>
+				<td>Elements with class="tagline", "highlight", "profile-container", "profile-photo", "skill-item", "contact-link"</td>
+				<td>Reusable styles that can be applied to any element carrying the class name.</td>
+			</tr>
+			<tr>
+				<td>ID Selector</td>
+				<td>#about, #education, #skills, #contact (the four sections)</td>
+				<td>Gives each unique section its own accent color so one element is styled differently.</td>
+			</tr>
+			<tr>
+				<td>Grouping Selector</td>
+				<td>h1, h2 together and p, li together</td>
+				<td>Applies the same rules to several selectors in one block, avoiding repeated code.</td>
+			</tr>
+			<tr>
+				<td>Universal Selector</td>
+				<td>*</td>
+				<td>Targets every element on the page; used as a reset for margins and padding.</td>
+			</tr>
+		</table>
+
+		<h2>Report Questions</h2>
+
+		<p><strong>1. What is CSS?</strong><br>
+		CSS stands for Cascading Style Sheets. It is the language used to describe how HTML elements are displayed, such as colors, fonts, spacing, and layout.</p>
+
+		<p><strong>2. Why is CSS used with HTML?</strong><br>
+		HTML provides the structure and content of a webpage, but on its own it looks plain. CSS is used with HTML to separate content from presentation, so the look of a page can be designed and changed from one external file without editing the HTML.</p>
+
+		<p><strong>3. What is a CSS selector?</strong><br>
+		A selector is the part of a CSS rule before the opening brace { }. It points to the HTML element or elements that the style should be applied to. For example, in "p { color: blue; }", the selector is "p".</p>
+
+		<p><strong>4. What is the difference between an element selector and a class selector?</strong><br>
+		An element selector targets every element with that tag name, so "p" styles all paragraphs on the page. A class selector targets only elements that have a specific class attribute, such as ".highlight", and the same class can be reused on many different elements.</p>
+
+		<p><strong>5. What is the difference between a class selector and an ID selector?</strong><br>
+		A class is written with a dot (.) and can be used on any number of elements on the page. An ID is written with a hash (#) and must be unique, so only one element on the page can have that ID. ID selectors also have higher specificity than class selectors.</p>
+
+		<p><strong>6. Why is the universal selector represented by *?</strong><br>
+		The asterisk (*) is a wildcard symbol that matches everything, so in CSS it means "select every element on the page". It is commonly used to reset default margins and padding so all elements start from the same base.</p>
+
+		<p><strong>7. Which selector did you find easiest to use and why?</strong><br>
+		I found the class selector easiest to use because you simply add a class name to any element and then reuse it wherever you want. It is easy to read and keeps the CSS organized instead of writing a separate rule for every element.</p>
+
+		<p><strong>8. Mention one problem you faced while completing the task and how you solved it.</strong><br>
+		At first my styling did not appear because in the link tag I wrote "styles.css" instead of "style.css", which is the actual file name, so the browser could not find the stylesheet. I checked the file name in the project folder, corrected the link, and refreshed the page, and then the CSS worked.</p>
+	</div>
+
+	<footer>
+		<p>&copy; 2026 Simon KC</p>
+	</footer>
+</body>
+</html>
